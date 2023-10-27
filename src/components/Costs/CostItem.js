@@ -1,11 +1,21 @@
+import React, {useState} from 'react';
 import './CostItem.css';
 import CostDate from './CostDate';
-import Card from './Card';
+import Card from '../UI/Card';
+import NewCost from '../NewCost/NewCost';
 
 function CostItem(props) {
 
+    
+
+
+
+  
+
+ 
   
     return  (
+        
         <Card className='cost-item'>
               <CostDate date={props.date} />
                 
@@ -13,6 +23,7 @@ function CostItem(props) {
                     <h2>{props.description}</h2>
                     <div className='cost-item__price'>${props.amount}</div> 
                 </div>
+              
 
          </Card>);
 }
